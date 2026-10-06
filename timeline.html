@@ -136,6 +136,99 @@
             }
         }
 
+        .site-footer {
+            background-color: #0b1120;
+            border-top: 1px solid rgba(255, 255, 255, 0.1);
+            padding: 42px 20px 22px;
+        }
+
+        .footer-logos {
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            flex-wrap: wrap;
+            gap: 30px;
+            background: #ffffff;
+            border-radius: 14px;
+            padding: 16px 34px;
+            max-width: 720px;
+            margin: 0 auto 36px;
+            box-shadow: 0 8px 24px -8px rgba(0, 0, 0, 0.5);
+        }
+
+        .footer-logos img {
+            width: auto;
+            display: block;
+        }
+
+        .footer-logos .logo-umd { height: 52px; }
+        .footer-logos .logo-gem { height: 42px; }
+        .footer-logos .logo-shield { height: 56px; }
+
+        .footer-inner {
+            max-width: 1100px;
+            margin: auto;
+            display: flex;
+            flex-wrap: wrap;
+            justify-content: space-between;
+            gap: 32px;
+        }
+
+        .footer-col {
+            min-width: 200px;
+        }
+
+        .footer-col h3 {
+            text-transform: uppercase;
+            letter-spacing: 1.5px;
+            font-size: 13px;
+            font-weight: 700;
+            color: #7dd3fc;
+            margin: 0 0 14px;
+        }
+
+        .footer-col p,
+        .footer-col a {
+            font-size: 14px;
+            line-height: 1.8;
+            color: #cbd5e1;
+            margin: 0;
+        }
+
+        .footer-col a {
+            display: block;
+            text-decoration: none;
+        }
+
+        .footer-col a:hover {
+            color: #38bdf8;
+        }
+
+        .footer-brand .name {
+            font-family: 'Times New Roman', Times, serif;
+            letter-spacing: 2px;
+            font-size: 19px;
+            color: #f8fafc;
+            margin-bottom: 8px;
+        }
+
+        .footer-bottom {
+            max-width: 1100px;
+            margin: 28px auto 0;
+            padding-top: 18px;
+            border-top: 1px solid rgba(255, 255, 255, 0.08);
+            text-align: center;
+            font-size: 13px;
+            color: #64748b;
+        }
+
+        @media (max-width: 768px) {
+            .footer-inner {
+                flex-direction: column;
+                gap: 28px;
+            }
+        }
+
     </style>
 </head>
 <body>
@@ -176,5 +269,37 @@
             </div>
         </div>
     </div>
+
+    <footer class="site-footer">
+        <div class="footer-logos">
+            <img class="logo-umd" src="assets/umd-logo.png" alt="University of Maryland">
+            <img class="logo-gem" src="assets/gem-crest.png" alt="Gemstone Honors Program, University of Maryland">
+            <img class="logo-shield" src="assets/md-shield.png" alt="University of Maryland shield">
+        </div>
+        <div class="footer-inner">
+            <div class="footer-col footer-brand">
+                <p class="name">TEAM G.A.M.E.</p>
+                <p>Gemstone Honors Program</p>
+                <p>University of Maryland, College Park</p>
+                <p>Contact: <a href="mailto:ajohn33@terpmail.umd.edu" style="display:inline">ajohn33@terpmail.umd.edu</a></p>
+            </div>
+            <div class="footer-col">
+                <h3>Resources</h3>
+                <a href="https://gemstone.umd.edu/" target="_blank" rel="noopener">Gemstone Honors Program</a>
+                <a href="https://www.umd.edu/" target="_blank" rel="noopener">University of Maryland</a>
+                <a href="https://honors.umd.edu/" target="_blank" rel="noopener">University of Maryland Honors College</a>
+            </div>
+            <div class="footer-col">
+                <h3>Explore</h3>
+                <a href="index.html">Home</a>
+                <a href="timeline.html">Timeline</a>
+                <a href="meettheteam.html">Meet the Team</a>
+                <a href="contact.html">Contact</a>
+            </div>
+        </div>
+        <div class="footer-bottom">
+            <p>&copy; 2025&ndash;2026 Team G.A.M.E. &middot; Gemstone Honors Program, University of Maryland</p>
+        </div>
+    </footer>
 </body>
 </html>
